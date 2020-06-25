@@ -1,0 +1,5 @@
+---
+  - name: installing appache server
+    yum:
+      name: httpd
+      state: present

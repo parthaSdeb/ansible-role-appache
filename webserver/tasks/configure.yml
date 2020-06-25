@@ -1,0 +1,7 @@
+---
+  - name: copying the config file
+    copy:
+      src: files/index.html
+      dest: /var/www/html/
+    notify:
+      - restart_httpd_service

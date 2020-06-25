@@ -1,0 +1,25 @@
+---
+# tasks file for webserver
+  - include_tasks: installing.yml
+  - include_tasks: configure.yml
+  - include_tasks: service.yml
+
+  # always use include_tasks  in stead of import_tasks
+
+  # - name: installing appache
+  #   yum:
+  #     name: httpd
+  #     state: latest
+  #
+  # - name: restart and enable httpd service
+  #   service:
+  #     name: httpd
+  #     state: restarted
+  #     enabled: yes
+  #
+  # - name: copying config file
+  #   copy:
+  #     src: files/index.html
+  #     dest: /var/www/html/
+  #   notify:
+  #     - restart_httpd_service

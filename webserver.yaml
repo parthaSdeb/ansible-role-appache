@@ -1,0 +1,11 @@
+---
+  # - name: test ansible roles
+  # - hosts: web
+  #   remote_user: root
+  #   roles:
+  #     - role: '/root/ansible-test-projects/ansible_roles/webserver'
+
+  - hosts: web
+    # remote_user: root
+    roles:
+      - /root/ansible-test-projects/ansible_roles/webserver
